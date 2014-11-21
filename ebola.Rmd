@@ -1,0 +1,55 @@
+Hack Ebola
+==================
+<!--
+    ```
+-->
+```{r, message = FALSE, tidy = FALSE, echo = F}
+## knitr configuration: http://yihui.name/knitr/options#chunk_options
+showMessage <- FALSE
+showWarning <- TRUE
+set_alias(w = "fig.width", h = "fig.height", res = "results")
+opts_chunk$set(comment = "##", error= TRUE, warning = showWarning, message = showMessage,
+               tidy = FALSE, cache = F, echo = T,
+               fig.width = 12, fig.height = 12, dev.args = list(family = "sans"))
+## for rgl
+knit_hooks$set(rgl = hook_rgl, webgl = hook_webgl)
+## for animation
+opts_knit$set(animation.fun = hook_ffmpeg_html)
+
+## R configuration
+options(width = 116, scipen = 5)
+```
+<!--
+    ``` ```
+-->
+
+References
+--------------------
+
+Load packages
+--------------------
+```{r}
+library(magrittr)
+library(gpairs)
+
+```
+
+Load data
+--------------------
+```{r}
+load(file = "dataList.RData")
+
+```
+
+Plots
+--------------------
+```{r}
+junk <- lapply(dataList, gpairs)
+
+```
+
+--------------------
+- Top Page: http://rpubs.com/kaz_yos/
+- Table of Contents: http://rpubs.com/kaz_yos/toc
+- Table of Contents (Japanese): http://rpubs.com/kaz_yos/toc-j
+- github: https://github.com/kaz-yos
