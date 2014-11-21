@@ -36,6 +36,31 @@ options(width = 120)
 ### Load data
 ################################################################################
 
+csvFiles <- Filter(function(x) {grepl(".csv",x)}, dir("./data"))
+
+dataList <- lapply(csvFiles, function(file) {
+    read.delim("./data/1.csv", header = FALSE)    
+})
+
+
+### Check data
+################################################################################
+
+lapply(dataList, summary)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ################################################################################
