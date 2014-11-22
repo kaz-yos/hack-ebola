@@ -32,6 +32,7 @@ Load packages
 library(magrittr)
 library(gpairs)
 library(ggplot2)
+library(ggmap)
 library(directlabels)
 
 ```
@@ -88,6 +89,18 @@ ggplot(data = geodat, mapping = aes(x = gn_longitude, y = gn_latitude, label = n
     theme_bw() + theme(legend.key = element_blank())
 
 ```
+
+Plot areas where cases are reported
+--------------------
+```{r}
+## Extract geocode data for sdr_name existing in maindat
+geodatInclded <- geodat[geodat$name %in% maindat$sdr_name, ]
+
+## ggmap
+qmplot(x = gn_longitude, y = gn_latitude, data = geodatInclded, source = "google")
+
+```
+
 
 --------------------
 - Top Page: http://rpubs.com/kaz_yos/
