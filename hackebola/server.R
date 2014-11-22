@@ -18,13 +18,14 @@ geocodeDat <- read.delim("./data/1.short.csv", header = TRUE)
 
 
 ### Server configuration
+## shinyServer then gives Shiny the unnamed function in its first argument.
 shinyServer(function(input, output) {
 
     dataset <- reactive(function() {
         ebolaTimeSeries[ebolaTimeSeries$date <= input$maxdate,]
     })
 
-    output$plot <- reactivePlot(function() {
+    output$plot <- renderPlot(function() {
 
         ## Extract geocode data for sdr_name existing in maindat
         geocodeDatInclded <- geocodeDat[geocodeDat$name %in% dataset$sdr_name, ]
