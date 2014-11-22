@@ -39,10 +39,10 @@ options(width = 120)
 if (FALSE) {
     ## This is ordered wrong.
     ## csvFiles <- Filter(function(x) {grepl(".csv",x)}, dir("./data"))
-    csvFiles <- paste0(1:16, ".csv")
+    csvFiles <- paste0("./data/", 1:16, ".csv")
 
     dataList <- lapply(csvFiles, function(file) {
-        read.delim("./data/1.csv", header = TRUE)    
+        read.delim(file = file, header = TRUE)    
     })
 
     save(dataList, file = "dataList.RData")
@@ -53,6 +53,10 @@ load(file = "dataList.RData")
 ### Check data
 ################################################################################
 
+cat("### names\n")
+lapply(dataList, names)
+
+cat("### summary\n")
 lapply(dataList, summary)
 
 
