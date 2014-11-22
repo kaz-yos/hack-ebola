@@ -1,7 +1,8 @@
 library(shiny)
 library(ggplot2)
 library(ggmap)
-
+library(lubridate)
+library(magrittr)
 
 ### Load time series dataset
 ## Load the data file available at:
@@ -9,6 +10,7 @@ library(ggmap)
 ebolaTimeSeries <- read.delim("./data/2.csv", header = TRUE)
 ## Keep only ADM2
 ebolaTimeSeries <- ebolaTimeSeries[ebolaTimeSeries$sdr_level == "ADM2",]
+
 
 ### Load geocode dataset
 ## Used to create a smaller dataset from 1.csv
@@ -26,6 +28,27 @@ if (FALSE) {
 }
 ## Load the geocode dataset
 geocodeDat <- read.delim("./data/1.short.csv", header = TRUE)
+
+
+### Load Ebola Treatment Centres, Isolation Wards Hospitals and Transit Centres
+etcDat <- read.delim("./data/5.csv", header = TRUE) %>%
+    subset(., country %in% c("Liberia","Guinea","Sierra Leone"))
+
+CleanEtcDates <- function(v) {
+    v[v %in% "N/A"] <- NA
+    v[v %in% "-"]   <- NA
+    v[v %in% "?"]   <- NA
+    v
+}
+etcDat$centre_opening_date <- CleanEtcDates(etcDat$centre_opening_date) %>% 
+    dmy %>% as.Date
+etcDat$centre_closing_date <- CleanEtcDates(etcDat$centre_closing_date) %>% 
+    dmy %>% as.Date
+
+## Give very early date for centers without oepning date
+etcDat$centre_opening_date[is.na(etcDat$centre_opening_date)] <- as.Date("2014-03-01")
+
+
 
 
 ### Server configuration
@@ -48,7 +71,7 @@ shinyServer(function(input, output, session) {
     ## Plot thunk creation
     output$plot <- renderPlot(function() {
 
-        ## Extract geocode data for sdr_name existing in maindat
+        ## Extract geocode data for sdr_name existing in datasetThunk
         geocodeDatInclded <- geocodeDat[geocodeDat$name %in% datasetThunk()$sdr_name, ]
 
         ## ggmap
