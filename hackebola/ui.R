@@ -1,29 +1,34 @@
+### Load libraries
 library(shiny)
+library(magrittr)
 library(ggplot2)
 
-dataset <- read.delim("./data/2.csv", header = TRUE)
 
+### Load time series dataset
+## Load the data file available at:
+## http://www.qdatum.io/public-sources
+dataset <- read.delim("./data/2.csv", header = TRUE)
+## Fix 
+dataset$date <- dataset$date + as.Date("1899-12-31")
+
+
+### shinyUI
 shinyUI(pageWithSidebar(
 
-  headerPanel("Hack Ebola: Counts Over Time"),
+    headerPanel("Hack Ebola: Counts Over Time"),
 
-  sidebarPanel(
+    sidebarPanel(
 
-    sliderInput('sampleSize', 'Sample Size', min=1, max=nrow(dataset),
-                value=min(1000, nrow(dataset)), step=500, round=0),
+        ## Get the date to plot the cumulative for
+        sliderInput('date', 'Date',
+                    min = min(dataset$date),
+                    max = max(dataset$date),
+                    value = max(dataset$date),
+                    step = 1, round = 0),
 
-    selectInput('x', 'X', names(dataset)),
-    selectInput('y', 'Y', names(dataset), names(dataset)[[2]]),
-    selectInput('color', 'Color', c('None', names(dataset))),
+    ),
 
-    checkboxInput('jitter', 'Jitter'),
-    checkboxInput('smooth', 'Smooth'),
-
-    selectInput('facet_row', 'Facet Row', c(None='.', names(dataset))),
-    selectInput('facet_col', 'Facet Column', c(None='.', names(dataset)))
-  ),
-
-  mainPanel(
-    plotOutput('plot')
-  )
+    mainPanel(
+        plotOutput('plot')
+    )
 ))
