@@ -40,8 +40,12 @@ shinyUI(pageWithSidebar(
                      selected = "cases")
     ),
 
+    
     ## What to put in the main panel
     mainPanel(
-        plotOutput('plot')
+
+        ## Plot the reuslts (may have two plots)
+        plotOutput('plots')
+
     )
 ))

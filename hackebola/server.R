@@ -43,9 +43,9 @@ CleanEtcDates <- function(v) {
     v[v %in% "?"]   <- NA
     v
 }
-etcDat$centre_opening_date <- CleanEtcDates(etcDat$centre_opening_date) %>% 
+etcDat$centre_opening_date <- CleanEtcDates(etcDat$centre_opening_date) %>%
     dmy %>% as.Date
-etcDat$centre_closing_date <- CleanEtcDates(etcDat$centre_closing_date) %>% 
+etcDat$centre_closing_date <- CleanEtcDates(etcDat$centre_closing_date) %>%
     dmy %>% as.Date
 
 ## Give very early date for centers without oepning date
@@ -71,8 +71,8 @@ shinyServer(function(input, output, session) {
         ebolaTimeSeries[ebolaTimeSeries$date <= input$maxdate,]
     })
 
-    ## Plot thunk creation
-    output$plot <- renderPlot(function() {
+    ## Plot thunk creation (named plot1)
+    output$plots <- renderPlot(function() {
 
         ## Get the max date in as.Date format
         maxdate_as.Date <- input$maxdate + as.Date("1899-12-31")
@@ -80,26 +80,42 @@ shinyServer(function(input, output, session) {
         ## Subset ETC dataset to the corresponding period
         ## ETC is not cumulative
         etcDatIncluded <- subset(etcDat, centre_opening_date <= maxdate_as.Date &
-                             centre_closing_date > maxdate_as.Date)        
+                             centre_closing_date > maxdate_as.Date)
 
         ## Extract geocode data for sdr_name existing in datasetThunk
         geocodeDatInclded <- geocodeDat[geocodeDat$name %in% datasetThunk()$sdr_name, ]
 
-        ## ggmap
-        ## p <- qmplot(x = gn_longitude, y = gn_latitude, data = geocodeDatInclded,
-        ##             xlim = range(geocodeDat$gn_longitude),
-        ##             ylim = range(geocodeDat$gn_latitude),
-        ##             source = "google")
-
-        p2 <- qmplot(x = longitude, y = latitude, data = etcDatIncluded,
-                    xlim = range(etcDat$longitude),
-                    ylim = range(etcDat$latitude),
+        ## Cases
+        p1 <- qmplot(x = gn_longitude, y = gn_latitude, data = geocodeDatInclded,
+                    xlim = range(geocodeDat$gn_longitude),
+                    ylim = range(geocodeDat$gn_latitude),
                     source = "google")
 
-        ## Need to print to actually show
-        ## print(p)
-        print(p2)
-        ## grid.arrange(p, p2, ncol = 1)
+        ## ETCs
+        p2 <- qmplot(x = longitude, y = latitude, data = etcDatIncluded,
+                     xlim = range(etcDat$longitude),
+                     ylim = range(etcDat$latitude),
+                     source = "google")
+
+
+        ## Need to print conditionally to actually show
+
+        if (input$whichMap == "cases") {
+            
+            print(p1)
+            
+        } else if (input$whichMap == "ETC") {
+
+            print(p2)
+            
+        } else {
+
+
+            grid.arrange(p1, p2, ncol = 1)
+            ## print(p1)
+            ## print(p2)
+            
+        }
 
     }, height = 800)
 
