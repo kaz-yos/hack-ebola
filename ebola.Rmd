@@ -77,6 +77,18 @@ plot1
 
 ```
 
+Geocodes
+--------------------
+```{r}
+geodat <- dataList[[1]]
+
+ggplot(data = geodat, mapping = aes(x = gn_longitude, y = gn_latitude, label = name)) +
+    layer(geom = "point") + 
+    ## layer(geom = "text", size = 3) +
+    theme_bw() + theme(legend.key = element_blank())
+
+```
+
 --------------------
 - Top Page: http://rpubs.com/kaz_yos/
 - Table of Contents: http://rpubs.com/kaz_yos/toc
