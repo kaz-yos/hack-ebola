@@ -2,6 +2,21 @@ library(shiny)
 library(ggplot2)
 library(ggmap)
 
+
+### Load geocode dataset
+## Used to create a smaller dataset from 1.csv
+if (FALSE) {
+    africaGeocodes <- read.delim("./data/1.csv", header = TRUE)
+    africaGeocodes <- africaGeocodes[africaGeocodes$name %in% ebolaTimeSeries$sdr_name, ]
+    ## Really tab deliminated
+    write.table(x = africaGeocodes, file = "./data/1.short.csv", sep = "\t")
+}
+## Load the geocode dataset
+geocodeDat <- read.delim("./data/1.short.csv", header = TRUE)
+
+
+
+
 ### Server configuration
 shinyServer(function(input, output) {
 
@@ -13,7 +28,7 @@ shinyServer(function(input, output) {
 
         ## Extract geocode data for sdr_name existing in maindat
         geocodeDatInclded <- geocodeDat[geocodeDat$name %in% dataset$sdr_name, ]
-        
+
         ## ggmap
         p <- qmplot(x = gn_longitude, y = gn_latitude, data = geocodeDatInclded,
                     source = "google")
