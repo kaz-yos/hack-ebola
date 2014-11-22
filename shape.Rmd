@@ -1,0 +1,57 @@
+Shape file experiments
+==================
+<!--
+    ```
+-->
+```{r, message = FALSE, tidy = FALSE, echo = F}
+## knitr configuration: http://yihui.name/knitr/options#chunk_options
+showMessage <- FALSE
+showWarning <- TRUE
+set_alias(w = "fig.width", h = "fig.height", res = "results")
+opts_chunk$set(comment = "##", error= TRUE, warning = showWarning, message = showMessage,
+               tidy = FALSE, cache = F, echo = T,
+               fig.width = 7, fig.height = 7, dev.args = list(family = "sans"))
+## for rgl
+knit_hooks$set(rgl = hook_rgl, webgl = hook_webgl)
+## for animation
+opts_knit$set(animation.fun = hook_ffmpeg_html)
+
+## R configuration
+options(width = 116, scipen = 5)
+```
+<!--
+    ``` ```
+-->
+
+References
+--------------------
+- http://hackebolawithdata.challengepost.com/forum_topics/4001-info-geographic-files
+
+
+Load packages
+--------------------
+```{r}
+library(magrittr)
+library(rgdal)
+
+```
+
+--------------------
+```{r}
+
+# If shapefiles saved in a subfolder "shapefiles" of your working directory:
+setwd("~/Documents/statistics/hack_ebola/")
+
+lbr1 <- readOGR(dsn = "./3country_shapefiles/", layer = "SLE_adm1")
+
+summary(lbr1) 
+plot(lbr1)
+
+```
+
+
+--------------------
+- Top Page: http://rpubs.com/kaz_yos/
+- Table of Contents: http://rpubs.com/kaz_yos/toc
+- Table of Contents (Japanese): http://rpubs.com/kaz_yos/toc-j
+- github: https://github.com/kaz-yos
