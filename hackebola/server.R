@@ -45,6 +45,8 @@ shinyServer(function(input, output, session) {
 
         ## ggmap
         p <- qmplot(x = gn_longitude, y = gn_latitude, data = geocodeDatInclded,
+                    xlim = range(geocodeDat$gn_longitude),
+                    ylim = range(geocodeDat$gn_latitude),
                     source = "google") +
                         labs(title = input$maxdate)
 
