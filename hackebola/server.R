@@ -16,21 +16,11 @@ ebolaTimeSeries <- ebolaTimeSeries[ebolaTimeSeries$sdr_level == "ADM2",]
 
 
 ### Load geocode dataset
-## Used to create a smaller dataset from 1.csv
-if (FALSE) {
-    ## Load the whole file
-    africaGeocodes <- read.delim("./data/1.csv", header = TRUE)
-    ## Keep only three countries of interest
-    africaGeocodes <- africaGeocodes[africaGeocodes$country_code %in% c("LR","SL","GN"), ]
-    ## Keep only ADM2
-    africaGeocodes <- africaGeocodes[africaGeocodes$level == "ADM2", ]
-    ## Keep places whose name show up in time series at some point
-    africaGeocodes <- africaGeocodes[africaGeocodes$name %in% ebolaTimeSeries$sdr_name, ]
-    ## Really tab deliminated
-    write.table(x = africaGeocodes, file = "./data/1.short.csv", sep = "\t")
-}
-## Load the geocode dataset
-geocodeDat <- read.delim("./data/1.short.csv", header = TRUE)
+geocodeDat <- read.delim("./data/1.csv", header = TRUE) %>%
+    subset(., country_code %in% c("GN","LR","SL") &
+               level %in% c("ADM2") &
+               ## drop ones in the sea
+               gn_latitude > 0)
 
 
 ### Load Ebola Treatment Centres, Isolation Wards Hospitals and Transit Centres
@@ -82,7 +72,7 @@ shinyServer(function(input, output, session) {
         etcDatIncluded <- subset(etcDat, centre_opening_date <= maxdate_as.Date &
                              centre_closing_date > maxdate_as.Date)
 
-        ## Extract geocode data for sdr_name existing in datasetThunk
+        ## Subset geocode data for sdr_name existing in datasetThunk
         geocodeDatInclded <- geocodeDat[geocodeDat$name %in% datasetThunk()$sdr_name, ]
 
         ## Cases
