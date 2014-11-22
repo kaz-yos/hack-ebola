@@ -3,6 +3,8 @@ library(ggplot2)
 library(ggmap)
 library(lubridate)
 library(magrittr)
+library(gridExtra)
+
 
 ### Load time series dataset
 ## Load the data file available at:
@@ -47,8 +49,8 @@ etcDat$centre_closing_date <- CleanEtcDates(etcDat$centre_closing_date) %>%
 
 ## Give very early date for centers without oepning date
 etcDat$centre_opening_date[is.na(etcDat$centre_opening_date)] <- as.Date("2014-03-01")
-
-
+## Give very late date for centers without closing date
+etcDat$centre_closing_date[is.na(etcDat$centre_closing_date)] <- as.Date("2014-12-31")
 
 
 ### Server configuration
@@ -71,19 +73,33 @@ shinyServer(function(input, output, session) {
     ## Plot thunk creation
     output$plot <- renderPlot(function() {
 
+        ## Get the max date in as.Date format
+        maxdate_as.Date <- input$maxdate + as.Date("1899-12-31")
+
+        ## Subset ETC dataset to the corresponding period
+        ## ETC is not cumulative
+        etcDatIncluded <- subset(etcDat, centre_opening_date <= maxdate_as.Date &
+                             centre_closing_date > maxdate_as.Date)        
+
         ## Extract geocode data for sdr_name existing in datasetThunk
         geocodeDatInclded <- geocodeDat[geocodeDat$name %in% datasetThunk()$sdr_name, ]
 
         ## ggmap
-        p <- qmplot(x = gn_longitude, y = gn_latitude, data = geocodeDatInclded,
-                    xlim = range(geocodeDat$gn_longitude),
-                    ylim = range(geocodeDat$gn_latitude),
-                    source = "google") +
-                        labs(title = input$maxdate)
+        ## p <- qmplot(x = gn_longitude, y = gn_latitude, data = geocodeDatInclded,
+        ##             xlim = range(geocodeDat$gn_longitude),
+        ##             ylim = range(geocodeDat$gn_latitude),
+        ##             source = "google")
+
+        p2 <- qmplot(x = longitude, y = latitude, data = etcDatIncluded,
+                    xlim = range(etcDat$longitude),
+                    ylim = range(etcDat$latitude),
+                    source = "google")
 
         ## Need to print to actually show
-        print(p)
+        ## print(p)
+        print(p2)
+        ## grid.arrange(p, p2, ncol = 1)
 
-    }, height=700)
+    }, height=900)
 
 })
