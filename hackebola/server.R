@@ -1,3 +1,4 @@
+### Load packages
 library(shiny)
 library(ggplot2)
 library(ggmap)
@@ -100,6 +101,6 @@ shinyServer(function(input, output, session) {
         print(p2)
         ## grid.arrange(p, p2, ncol = 1)
 
-    }, height=900)
+    }, height = 800)
 
 })

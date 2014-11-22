@@ -1,4 +1,4 @@
-### Load libraries
+### Load packages
 library(shiny)
 library(ggplot2)
 
