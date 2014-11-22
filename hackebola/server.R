@@ -56,13 +56,13 @@ shinyServer(function(input, output, session) {
 
     ## Create a reactive dataset
     ## reactive() is just creating a thunk (delayed execution)
-    datasetThunk <- reactive(function() {
+     datasetThunk <- reactive({
         ## Subset dataset based on the max date
         ebolaTimeSeries[ebolaTimeSeries$date <= input$maxdate,]
     })
 
     ## Plot thunk creation (named plot1)
-    output$plots <- renderPlot(function() {
+    output$plots <- renderPlot({
 
         ## Get the max date in as.Date format
         maxdate_as.Date <- input$maxdate + as.Date("1899-12-31")
@@ -77,9 +77,9 @@ shinyServer(function(input, output, session) {
 
         ## Cases
         p1 <- qmplot(x = gn_longitude, y = gn_latitude, data = geocodeDatInclded,
-                    xlim = range(geocodeDat$gn_longitude),
-                    ylim = range(geocodeDat$gn_latitude),
-                    source = "google")
+                     xlim = range(geocodeDat$gn_longitude),
+                     ylim = range(geocodeDat$gn_latitude),
+                     source = "google")
 
         ## ETCs
         p2 <- qmplot(x = longitude, y = latitude, data = etcDatIncluded,
