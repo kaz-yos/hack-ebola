@@ -22,7 +22,7 @@ shinyUI(pageWithSidebar(
         ## Use this to truncate the data fed to ggmap
         sliderInput('maxdate',
                     'Date to show cumulative occurrence for (days since 1900) ',
-                    min   = min(ebolaTimeSeries$date),
+                    min   = min(ebolaTimeSeries$date) + 1,
                     max   = max(ebolaTimeSeries$date),
                     value = max(ebolaTimeSeries$date),
                     step  = 1, round = 0),

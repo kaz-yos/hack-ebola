@@ -5,6 +5,7 @@ library(ggmap)
 library(lubridate)
 library(magrittr)
 library(gridExtra)
+library(dplyr)
 
 
 ### Load time series dataset
@@ -20,7 +21,11 @@ geocodeDat <- read.delim("./data/1.csv", header = TRUE) %>%
     subset(., country_code %in% c("GN","LR","SL") &
                level %in% c("ADM2") &
                ## drop ones in the sea
-               gn_latitude > 0)
+               gn_latitude > 0) %>%
+               ## rename
+               rename(.,
+                      latitude = gn_latitude,
+                      longitude = gn_longitude)
 
 
 ### Load Ebola Treatment Centres, Isolation Wards Hospitals and Transit Centres
@@ -75,36 +80,39 @@ shinyServer(function(input, output, session) {
         ## Subset geocode data for sdr_name existing in datasetThunk
         geocodeDatInclded <- geocodeDat[geocodeDat$name %in% datasetThunk()$sdr_name, ]
 
+
+        ## Merge two dataset with only geocoordinates
+        ## Drop unnecessary columns
+        etcDatIncluded    <- etcDatIncluded[c("latitude","longitude")]
+        etcDatIncluded$type <- "Cases"
+        geocodeDatInclded <- geocodeDatInclded[c("latitude","longitude")]
+        geocodeDatInclded$type <- "ETCs"
+        ## Merge
+        mergedData <- rbind(etcDatIncluded, geocodeDatInclded)
+
         ## Cases
-        p1 <- qmplot(x = gn_longitude, y = gn_latitude, data = geocodeDatInclded,
-                     xlim = range(geocodeDat$gn_longitude),
-                     ylim = range(geocodeDat$gn_latitude),
-                     source = "google")
-
-        ## ETCs
-        p2 <- qmplot(x = longitude, y = latitude, data = etcDatIncluded,
-                     xlim = range(etcDat$longitude),
-                     ylim = range(etcDat$latitude),
-                     source = "google")
-
+        p <- qmplot(x = longitude, y = latitude, data = mergedData,
+                    xlim = range(geocodeDat$longitude),
+                    ylim = range(geocodeDat$latitude),
+                    source = "google") +
+                        layer(geom = "point",
+                              mapping = aes(color = type),
+                              size = 10, alpha = 0.5)
 
         ## Need to print conditionally to actually show
 
         if (input$whichMap == "cases") {
-            
-            print(p1)
-            
+
+            print(p %+% subset(mergedData, type == "Cases"))
+
         } else if (input$whichMap == "ETC") {
 
-            print(p2)
-            
+            print(p %+% subset(mergedData, type == "ETCs"))
+
         } else {
 
+            print(p)
 
-            grid.arrange(p1, p2, ncol = 1)
-            ## print(p1)
-            ## print(p2)
-            
         }
 
     }, height = 800)
