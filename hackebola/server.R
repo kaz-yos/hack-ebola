@@ -21,14 +21,17 @@ geocodeDat <- read.delim("./data/1.short.csv", header = TRUE)
 ## shinyServer then gives Shiny the unnamed function in its first argument.
 shinyServer(function(input, output) {
 
-    dataset <- reactive(function() {
+    ## Create a reactive dataset 
+    ## reactive() is just creating a thunk (delayed execution)
+    datasetThunk <- reactive(function() {
         ebolaTimeSeries[ebolaTimeSeries$date <= input$maxdate,]
     })
 
+    ## Plot thunk creation
     output$plot <- renderPlot(function() {
 
         ## Extract geocode data for sdr_name existing in maindat
-        geocodeDatInclded <- geocodeDat[geocodeDat$name %in% dataset$sdr_name, ]
+        geocodeDatInclded <- geocodeDat[geocodeDat$name %in% datasetThunk()$sdr_name, ]
 
         ## ggmap
         p <- qmplot(x = gn_longitude, y = gn_latitude, data = geocodeDatInclded,
