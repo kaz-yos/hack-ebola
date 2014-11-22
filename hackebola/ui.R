@@ -28,8 +28,13 @@ shinyUI(pageWithSidebar(
         ## https://github.com/rstudio/shiny/issues/66
         dateInput('maxdateDate',
                   'Date to show cumulative occurrence for',
-                  value = max(ebolaTimeSeries$date) + as.Date("1899-12-31"))
+                  value = max(ebolaTimeSeries$date) + as.Date("1899-12-31")),
 
+        ## Radio buttons to select which ones to plot
+        radioButtons('whichMap',
+                     'Which Map(s)?',
+                     choices = list("cases","ETC","both"),
+                     selected = "cases")
     ),
 
     mainPanel(
