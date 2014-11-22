@@ -7,11 +7,19 @@ library(ggmap)
 ## Load the data file available at:
 ## http://www.qdatum.io/public-sources
 ebolaTimeSeries <- read.delim("./data/2.csv", header = TRUE)
+## Keep only ADM2
+ebolaTimeSeries <- ebolaTimeSeries[ebolaTimeSeries$sdr_level == "ADM2",]
 
 ### Load geocode dataset
 ## Used to create a smaller dataset from 1.csv
 if (FALSE) {
+    ## Load the whole file
     africaGeocodes <- read.delim("./data/1.csv", header = TRUE)
+    ## Keep only three countries of interest
+    africaGeocodes <- africaGeocodes[africaGeocodes$country_code %in% c("LR","SL","GN"), ]
+    ## Keep only ADM2
+    africaGeocodes <- africaGeocodes[africaGeocodes$level == "ADM2", ]
+    ## Keep places whose name show up in time series at some point
     africaGeocodes <- africaGeocodes[africaGeocodes$name %in% ebolaTimeSeries$sdr_name, ]
     ## Really tab deliminated
     write.table(x = africaGeocodes, file = "./data/1.short.csv", sep = "\t")
@@ -30,7 +38,7 @@ shinyServer(function(input, output, session) {
                         value = input$maxdate + as.Date("1899-12-31"))
     })
 
-    ## Create a reactive dataset 
+    ## Create a reactive dataset
     ## reactive() is just creating a thunk (delayed execution)
     datasetThunk <- reactive(function() {
         ## Subset dataset based on the max date
@@ -39,7 +47,7 @@ shinyServer(function(input, output, session) {
 
     ## Plot thunk creation
     output$plot <- renderPlot(function() {
-        
+
         ## Extract geocode data for sdr_name existing in maindat
         geocodeDatInclded <- geocodeDat[geocodeDat$name %in% datasetThunk()$sdr_name, ]
 
