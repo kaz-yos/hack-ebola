@@ -1,30 +1,26 @@
 library(shiny)
 library(ggplot2)
+library(ggmap)
 
+### Server configuration
 shinyServer(function(input, output) {
 
-  dataset <- reactive(function() {
-    diamonds[sample(nrow(diamonds), input$sampleSize),]
-  })
+    dataset <- reactive(function() {
+        ebolaTimeSeries[ebolaTimeSeries$date <= input$maxdate,]
+    })
 
-  output$plot <- reactivePlot(function() {
+    output$plot <- reactivePlot(function() {
 
-    p <- ggplot(dataset(), aes_string(x=input$x, y=input$y)) + geom_point()
+        ## Extract geocode data for sdr_name existing in maindat
+        geocodeDatInclded <- geocodeDat[geocodeDat$name %in% dataset$sdr_name, ]
+        
+        ## ggmap
+        p <- qmplot(x = gn_longitude, y = gn_latitude, data = geocodeDatInclded,
+                    source = "google")
 
-    if (input$color != 'None')
-      p <- p + aes_string(color=input$color)
+        ## Need to print to actually show
+        print(p)
 
-    facets <- paste(input$facet_row, '~', input$facet_col)
-    if (facets != '. ~ .')
-      p <- p + facet_grid(facets)
-
-    if (input$jitter)
-      p <- p + geom_jitter()
-    if (input$smooth)
-      p <- p + geom_smooth()
-
-    print(p)
-
-  }, height=700)
+    }, height=700)
 
 })
