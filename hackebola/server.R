@@ -7,8 +7,6 @@ library(ggmap)
 ## Load the data file available at:
 ## http://www.qdatum.io/public-sources
 ebolaTimeSeries <- read.delim("./data/2.csv", header = TRUE)
-## Fix
-## ebolaTimeSeries$date <- ebolaTimeSeries$date + as.Date("1899-12-31")
 
 ### Load geocode dataset
 ## Used to create a smaller dataset from 1.csv
@@ -20,8 +18,6 @@ if (FALSE) {
 }
 ## Load the geocode dataset
 geocodeDat <- read.delim("./data/1.short.csv", header = TRUE)
-
-
 
 
 ### Server configuration
@@ -38,15 +34,11 @@ shinyServer(function(input, output, session) {
     ## reactive() is just creating a thunk (delayed execution)
     datasetThunk <- reactive(function() {
         ## Subset dataset based on the max date
-        ## maxdate <- input$maxdate + as.Date("1899-12-31")
         ebolaTimeSeries[ebolaTimeSeries$date <= input$maxdate,]
     })
 
     ## Plot thunk creation
     output$plot <- renderPlot(function() {
-        ## Max date creation
-        ## maxdateStr <- input$maxdate + as.Date("1899-12-31") %>%
-        ##     sprintf("%s", .)
         
         ## Extract geocode data for sdr_name existing in maindat
         geocodeDatInclded <- geocodeDat[geocodeDat$name %in% datasetThunk()$sdr_name, ]

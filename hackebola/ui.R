@@ -1,6 +1,5 @@
 ### Load libraries
 library(shiny)
-library(magrittr)
 library(ggplot2)
 
 
@@ -8,8 +7,6 @@ library(ggplot2)
 ## Load the data file available at:
 ## http://www.qdatum.io/public-sources
 ebolaTimeSeries <- read.delim("./data/2.csv", header = TRUE)
-## Fix
-## ebolaTimeSeries$date <- ebolaTimeSeries$date + as.Date("1899-12-31")
 
 
 ### shinyUI
