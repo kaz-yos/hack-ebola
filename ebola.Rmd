@@ -102,6 +102,22 @@ qmplot(x = gn_longitude, y = gn_latitude, data = geodatInclded, source = "google
 ```
 
 
+Liberia
+--------------------
+```{r}
+## Extract Liberia administrative level 2 data
+geodatLiberia <- subset(geodat, country_code == "LR" & level == "ADM1")
+
+geodatLiberia$ebola <- geodatLiberia$name %in% maindat$sdr_name
+
+qmplot(x = gn_longitude, y = gn_latitude, color = factor(ebola, levels = c(TRUE,FALSE)),
+       data = geodatLiberia, source = "google")
+
+
+
+```
+
+
 --------------------
 - Top Page: http://rpubs.com/kaz_yos/
 - Table of Contents: http://rpubs.com/kaz_yos/toc
