@@ -12,8 +12,11 @@ ebolaTimeSeries <- read.delim("./data/2.csv", header = TRUE)
 ### shinyUI
 shinyUI(pageWithSidebar(
 
-    headerPanel("Hack Ebola: Occurrence Over Time"),
+    ## Title
+    headerPanel("Hack Ebola: Occurrence Over Time (very crude, please do confirm with other sources)"),
 
+    
+    ## Side bar for controls
     sidebarPanel(
         ## Get the date to plot the cumulative occurrence for
         ## Use this to truncate the data fed to ggmap
@@ -37,6 +40,7 @@ shinyUI(pageWithSidebar(
                      selected = "cases")
     ),
 
+    ## What to put in the main panel
     mainPanel(
         plotOutput('plot')
     )
