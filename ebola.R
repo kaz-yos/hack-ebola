@@ -36,12 +36,17 @@ options(width = 120)
 ### Load data
 ################################################################################
 
-csvFiles <- Filter(function(x) {grepl(".csv",x)}, dir("./data"))
+if (FALSE) {
+    csvFiles <- Filter(function(x) {grepl(".csv",x)}, dir("./data"))
 
-dataList <- lapply(csvFiles, function(file) {
-    read.delim("./data/1.csv", header = FALSE)    
-})
+    dataList <- lapply(csvFiles, function(file) {
+        read.delim("./data/1.csv", header = TRUE)    
+    })
 
+    save(dataList, file = "dataList.RData")
+}
+
+load(file = "dataList.RData")
 
 ### Check data
 ################################################################################

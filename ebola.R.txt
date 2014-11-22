@@ -1,674 +1,674 @@
 [[1]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 [[2]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 [[3]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 [[4]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 [[5]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 [[6]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 [[7]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 [[8]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 [[9]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 [[10]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 [[11]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 [[12]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 [[13]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 [[14]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 [[15]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 [[16]]
-       V1                  V2                        V3               V4                 V5        
- NG     :50862              :150870                   :136051   0      :136051            :136051  
- CD     :34360   GIN00400101:    18   dod_country_code:     1   122    :    18   ADM1     : 14351  
- LR     :19593   GIN0800059 :    18   GN              :  7530   481    :    18   ADM2     :  1046  
- ML     :14879   GIN0800982 :    18   LR              : 14977   482    :    18   ADM3     :  1013  
- GN     :11526   GIN0900128 :    18   ML              :    66   483    :    18   dod_level:     1  
- CI     :10825   GIN0902069 :    18   NG              :   837   484    :    18   PPL      :  7017  
- (Other):17434   (Other)    :  8519   SL              :    17   (Other): 23338                     
-           V6               V7               V8                V9              V10             V11        
-            :136057   0      :150402          :145201           :145201   00     :23573          :145763  
- Balandougou:   180   381    :   310   371543 :     6   780672\n:     7          :14736   13     :   994  
- Fadougou   :   168   375    :   274   397911 :     6   619837\n:     6   03     :10181   17     :   884  
- Madina     :   164   376    :   265   424784 :     6   631733\n:     6   01     : 8737   39     :   881  
- Yomadou    :   100   382    :   168   431561 :     6   704092\n:     6   05     : 6801   09     :   628  
- Banankoro  :    90   105    :   160   438617 :     6   707084\n:     6   02     : 6210   07     :   619  
- (Other)    : 22720   (Other):  7900   (Other): 14248   (Other) : 14247   (Other):89241   (Other):  9710  
-      V12                     V13                           V14                  V15              V16       
-        :156190                 :159476                       :130398              : 14732   NG     :50819  
- 203    :     2   6544533       :     1   Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360  
- 283    :     2   6544534       :     1   Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873  
- 7669296:     2   gn_admin4_code:     1   Madina,Medina,Médina:    17   Fadougou   :   160          :14732  
- KD1909 :     2                           Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825  
- KD2210 :     2                           Touba               :    15   Yomadou    :    90   GN     : 9508  
- (Other):  3279                           (Other)             : 28993   (Other)    :143953   (Other):24362  
-               V17              V18              V19              V20              V21                 V22        
-                 : 14732   PPL    :139928   0      : 14732   0      :38936   0.000000: 14734   0.000000  : 14732  
- A               :  4818          : 14732   2277508:    20   2317396: 5674   8.333330:   192   -10.600000:   134  
- gn_feature_class:     1   ADM3   :  3284   2421497:    20   2347266: 5157   8.550000:   188   8.616670  :   116  
- P               :139928   ADM2   :  1390   2423532:    16   216139 : 4335   7.200000:   176   4.050000  :   112  
-                           ADM1   :   135   2417972:    15   214139 : 3997   8.600000:   176   8.533330  :   109  
-                           PCLI   :     7   9817712:    15   2454532: 3336   7.333330:   175   -10.450000:   108  
-                           (Other):     3   (Other):144661   (Other):98044   (Other) :143838   (Other)   :144168  
-          V23              V24              V25            V26                  V27              V28        
-            : 14732   0      :158688   1      :     1   ADM1 : 14397   Madina     :   258   0      : 36232  
- Madina     :   258   114250 :     5   10     :     1   ADM2 :  1371   Balandougou:   198   45063  :  5674  
- Balandougou:   178   286152 :     5   100    :     1   ADM3 :  4287   Fadougou   :   172   7830   :  5158  
- Fadougou   :   160   166594 :     4   1000   :     1   ADM4 :     2   Banankoro  :   116   34091  :  4335  
- Banankoro  :   108   135817 :     3   10000  :     1   level:     1   Yomadou    :   100   32310  :  3997  
- Yomadou    :    90   158200 :     3   100000 :     1   PCLI :     5   Koba       :    74   8640   :  3343  
- (Other)    :143953   (Other):   771   (Other):159473   PPL  :139416   (Other)    :158561   (Other):100740  
+  country_code          dod_code      dod_country_code     dod_id      dod_level            dod_name     
+ NG     :50862              :150870     :136051        Min.   :    0       :136051              :136057  
+ CD     :34360   GIN00400101:    18   GN:  7530        1st Qu.:    0   ADM1: 14351   Balandougou:   180  
+ LR     :19593   GIN0800059 :    18   LR: 14977        Median :    0   ADM2:  1046   Fadougou   :   168  
+ ML     :14879   GIN0800982 :    18   ML:    66        Mean   : 1335   ADM3:  1013   Madina     :   164  
+ GN     :11526   GIN0900128 :    18   NG:   837        3rd Qu.:    0   PPL :  7017   Yomadou    :   100  
+ CI     :10825   GIN0902069 :    18   SL:    17        Max.   :19976                 Banankoro  :    90  
+ (Other):17433   (Other)    :  8518                                                  (Other)    : 22719  
+ dod_parent_id     dod_x_utm        dod_y_utm      gn_admin1_code  gn_admin2_code    gn_admin3_code   gn_admin4_code   
+ Min.   :    0   Min.   :226765   Min.   :481700   00     :23573   Min.   :      1          :156190   Min.   :6544533  
+ 1st Qu.:    0   1st Qu.:348093   1st Qu.:684421          :14736   1st Qu.:     13   203    :     2   1st Qu.:6544533  
+ Median :    0   Median :396635   Median :733433   03     :10181   Median :     23   283    :     2   Median :6544534  
+ Mean   :  135   Mean   :410072   Mean   :724908   01     : 8737   Mean   : 202682   7669296:     2   Mean   :6544534  
+ 3rd Qu.:    0   3rd Qu.:455684   3rd Qu.:767007   05     : 6801   3rd Qu.:    429   KD1909 :     2   3rd Qu.:6544534  
+ Max.   :19925   Max.   :671639   Max.   :943256   02     : 6210   Max.   :9645234   KD2210 :     2   Max.   :6544534  
+                 NA's   :145201   NA's   :145201   (Other):89240   NA's   :145763    (Other):  3278   NA's   :159476   
+            gn_alternatenames       gn_asciiname    gn_country_code gn_feature_class gn_feature_name  gn_geonameid    
+                     :130398              : 14732   NG     :50819    : 14732             : 14732     Min.   :      0  
+ Doe,Duo,Duo Town    :    20   Madina     :   258   CD     :34360   A:  4818         ADM1:   135     1st Qu.:2272870  
+ Fadou,Fadougou      :    20   Balandougou:   178   ML     :14873   P:139928         ADM2:  1390     Median :2340246  
+ Madina,Medina,Médina:    17   Fadougou   :   160          :14732                    ADM3:  3284     Mean   :3306614  
+ Banankoro,Bandankoro:    16   Banankoro  :   108   CI     :10825                    ADM4:     2     3rd Qu.:2594083  
+ Touba               :    15   Yomadou    :    90   GN     : 9508                    PCLI:     7     Max.   :9821365  
+ (Other)             : 28992   (Other)    :143952   (Other):24361                    PPL :139928                      
+ gn_geonameid_parent  gn_latitude       gn_longitude            gn_name       gn_population             id        
+ Min.   :      0     Min.   :-13.350   Min.   :-17.515              : 14732   Min.   :        0   Min.   :     1  
+ 1st Qu.: 205703     1st Qu.:  0.000   1st Qu.: -7.743   Madina     :   258   1st Qu.:        0   1st Qu.: 39870  
+ Median :2322907     Median :  7.425   Median :  4.117   Balandougou:   178   Median :        0   Median : 79740  
+ Mean   :1739035     Mean   :  5.982   Mean   :  3.736   Fadougou   :   160   Mean   :     3230   Mean   : 79740  
+ 3rd Qu.:2451477     3rd Qu.: 11.160   3rd Qu.: 11.867   Banankoro  :   108   3rd Qu.:        0   3rd Qu.:119609  
+ Max.   :9412195     Max.   : 22.674   Max.   : 31.238   Yomadou    :    90   Max.   :154000000   Max.   :159478  
+                                                         (Other)    :143952                                       
+  level                 name          parent_id     
+ ADM1: 14397   Madina     :   258   Min.   :     0  
+ ADM2:  1371   Balandougou:   198   1st Qu.:   168  
+ ADM3:  4287   Fadougou   :   172   Median :  7856  
+ ADM4:     2   Banankoro  :   116   Mean   : 23922  
+ PCLI:     5   Yomadou    :   100   3rd Qu.: 32310  
+ PPL :139416   Koba       :    74   Max.   :159453  
+               (Other)    :158560                   
 
 R version 3.1.1 (2014-07-10)
 Platform: x86_64-apple-darwin13.1.0 (64-bit)
