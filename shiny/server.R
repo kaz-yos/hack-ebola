@@ -7,6 +7,13 @@
 
 library(shiny)
 
+## Description:
+##      Defines the server-side logic of the Shiny application. This
+##      generally involves creating functions that map user inputs to
+##      various kinds of output.
+## Usage:
+##      shinyServer(func)
+
 shinyServer(function(input, output) {
     
     output$distPlot <- renderPlot({
@@ -16,7 +23,8 @@ shinyServer(function(input, output) {
         bins <- seq(min(x), max(x), length.out = input$bins + 1)
         
         ## draw the histogram with the specified number of bins
-        hist(x, breaks = bins, col = 'darkgray', border = 'white')
+        hist(x, breaks = bins, col = 'skyblue', border = 'white',
+             ylim = c(0, input$ylim_upper))
         
     })
     

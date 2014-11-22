@@ -19,6 +19,12 @@ shinyUI(fluidPage(
                         "Number of bins:",
                         min = 1,
                         max = 50,
+                        value = 30),
+            ## 
+            sliderInput("ylim_upper",
+                        "Upper bound of ylim",
+                        min = 1,
+                        max = 50,
                         value = 30)
         ),
         
