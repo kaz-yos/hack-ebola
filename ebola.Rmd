@@ -10,7 +10,7 @@ showWarning <- TRUE
 set_alias(w = "fig.width", h = "fig.height", res = "results")
 opts_chunk$set(comment = "##", error= TRUE, warning = showWarning, message = showMessage,
                tidy = FALSE, cache = F, echo = T,
-               fig.width = 12, fig.height = 12, dev.args = list(family = "sans"))
+               fig.width = 7, fig.height = 7, dev.args = list(family = "sans"))
 ## for rgl
 knit_hooks$set(rgl = hook_rgl, webgl = hook_webgl)
 ## for animation
@@ -31,6 +31,8 @@ Load packages
 ```{r}
 library(magrittr)
 library(gpairs)
+library(ggplot2)
+library(directlabels)
 
 ```
 
@@ -55,6 +57,19 @@ head(maindat)
 ## 
 cat("### Types of cases by \n")
 xtabs( ~ sdr_name + category, data = subset(maindat, sdr_level == "ADM2"))
+
+```
+
+Plot
+--------------------
+```{r, w = 15, h = 15}
+plot1 <- ggplot(data = subset(maindat, sdr_level == "ADM2"),
+       mapping = aes(x = date, y = value, group = sdr_name, color = sdr_name)) +
+           layer(geom = "line") +
+           guides(color = guide_legend(ncol = 2)) +
+           facet_wrap( ~ category, ncol = 2) + 
+           theme_bw() + theme(legend.key = element_blank())
+plot1
 
 ```
 
