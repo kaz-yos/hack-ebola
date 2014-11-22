@@ -55,7 +55,7 @@ load(file = "dataList.RData")
 
 
 ## 05: Ebola Treatment Centres, Isolation Wards Hospitals and Transit Centres
-etcDat <- dataList[[5]]
+etcDat <- dataList[[5]] %>% subset(., country %in% c("Liberia","Guinea","Sierra Leone"))
 
 CleanEtcDates <- function(v) {
     v[v %in% "N/A"] <- NA
@@ -70,6 +70,9 @@ etcDat$centre_opening_date <- CleanEtcDates(etcDat$centre_opening_date) %>%
     dmy %>% as.Date
 etcDat$centre_closing_date <- CleanEtcDates(etcDat$centre_closing_date) %>% 
     dmy %>% as.Date
+
+## Give very early date for centers without oepning date
+etcDat$centre_opening_date[is.na(etcDat$centre_opening_date)] <- as.Date("2014-03-01")
 
 library(ggmap)
 qmplot(x = longitude, y = latitude,
