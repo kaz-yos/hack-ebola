@@ -26,7 +26,13 @@ geocodeDat <- read.delim("./data/1.short.csv", header = TRUE)
 
 ### Server configuration
 ## shinyServer then gives Shiny the unnamed function in its first argument.
-shinyServer(function(input, output) {
+shinyServer(function(input, output, session) {
+
+    ## Update date input based on the slider value
+    observe({
+        updateDateInput(session, 'maxdateDate',
+                        value = input$maxdate + as.Date("1899-12-31"))
+    })
 
     ## Create a reactive dataset 
     ## reactive() is just creating a thunk (delayed execution)
