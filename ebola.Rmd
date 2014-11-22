@@ -54,8 +54,12 @@ maindat$date <- maindat$date + as.Date("1899-12-31")
 summary(maindat)
 ##
 head(maindat)
+## Number of records by Countries
+maindat %>% extract("country") %>% table
+## Number of records by Regions and Countries
+xtabs( ~ sdr_name + country, maindat)
 ## 
-cat("### Types of cases by \n")
+cat("### Types of cases by regions\n")
 xtabs( ~ sdr_name + category, data = subset(maindat, sdr_level == "ADM2"))
 
 ```
