@@ -36,16 +36,19 @@ library(rgdal)
 
 ```
 
+
+Files
 --------------------
 ```{r}
+dir("./3country_shapefiles/")
+```
 
-# If shapefiles saved in a subfolder "shapefiles" of your working directory:
-setwd("~/Documents/statistics/hack_ebola/")
 
-lbr1 <- readOGR(dsn = "./3country_shapefiles/", layer = "SLE_adm1")
-
-summary(lbr1) 
-plot(lbr1)
+Liberia administrative level 2 shape data
+--------------------
+```{r}
+lbr2 <- readOGR(dsn = "./3country_shapefiles/", layer = "LBR_adm2")
+plot(lbr2)
 
 ```
 
