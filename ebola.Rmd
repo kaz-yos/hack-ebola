@@ -41,10 +41,20 @@ load(file = "dataList.RData")
 
 ```
 
-Plots
+Summary of the main dataset (2.csv)
 --------------------
 ```{r}
-junk <- lapply(dataList, gpairs)
+## Extract main dataset
+maindat <- dataList[[2]]
+## Fix date
+maindat$date <- maindat$date + as.Date("1899-12-31")
+##
+summary(maindat)
+##
+head(maindat)
+## 
+cat("### Types of cases by \n")
+xtabs( ~ sdr_name + category, data = subset(maindat, sdr_level == "ADM2"))
 
 ```
 
