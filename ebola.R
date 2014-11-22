@@ -37,7 +37,9 @@ options(width = 120)
 ################################################################################
 
 if (FALSE) {
-    csvFiles <- Filter(function(x) {grepl(".csv",x)}, dir("./data"))
+    ## This is ordered wrong.
+    ## csvFiles <- Filter(function(x) {grepl(".csv",x)}, dir("./data"))
+    csvFiles <- paste0(1:16, ".csv")
 
     dataList <- lapply(csvFiles, function(file) {
         read.delim("./data/1.csv", header = TRUE)    
