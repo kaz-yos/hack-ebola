@@ -113,7 +113,17 @@ geodatLiberia$ebola <- geodatLiberia$name %in% maindat$sdr_name
 qmplot(x = gn_longitude, y = gn_latitude, color = factor(ebola, levels = c(TRUE,FALSE)),
        data = geodatLiberia, source = "google")
 
+## Distance matrix
+matLatDist <- outer(X = geodatLiberia[,c("gn_latitude")],
+                    Y = geodatLiberia[,c("gn_latitude")],
+                    FUN = function(X,Y) {(X-Y)^2})
+matLonDist <- outer(X = geodatLiberia[,c("gn_longitude")],
+                    Y = geodatLiberia[,c("gn_longitude")],
+                    FUN = function(X,Y) {(X-Y)^2})
+matSqDist <- matLatDist + matLonDist %>% sqrt
 
+## Sort each row
+matSqDistSort <- apply(matSqDist, MARGIN = 1, FUN = sort) %>% t
 
 ```
 
@@ -123,3 +133,11 @@ qmplot(x = gn_longitude, y = gn_latitude, color = factor(ebola, levels = c(TRUE,
 - Table of Contents: http://rpubs.com/kaz_yos/toc
 - Table of Contents (Japanese): http://rpubs.com/kaz_yos/toc-j
 - github: https://github.com/kaz-yos
+
+
+
+
+
+
+
+
